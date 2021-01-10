@@ -8,7 +8,7 @@ int num_div(ll n) {
     int ans = 0;
     for(int i = 1; i * i <= n; i++) {
         if(n % i == 0) {
-            if(n/i == i)
+            if(n/i == i) // quadrado perfeito, número ímpar de divisores..
                 ans++;
             else
                 ans += 2;
