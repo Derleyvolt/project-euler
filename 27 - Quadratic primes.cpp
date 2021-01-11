@@ -41,7 +41,7 @@ void solve() {
             }
         }
     }
-    cout << "max: " << ans[0] << endl;
+    cout << "numero maximo de primos \"consecutivos\": " << ans[0] << endl;
     cout << "n^2 + " << ans[1] << "n + " << ans[2] << endl;
 }
 
