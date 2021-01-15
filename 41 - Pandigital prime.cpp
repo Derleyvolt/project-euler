@@ -6,6 +6,10 @@ using namespace std;
 
 // o resultado deve ser alguma permutação desses números..
 
+// Um detalhe simples e interessante que eu não saquei é que todo número contendo os números de 1 até 9, independente da ordem, é divisível por 3..
+// o mesmo vale pros números de 1 até 8..
+// esse detalhe eu vi no fórum do Project Euler após a submeter a minha solução.
+
 vector<string> permut = {
                             {"1"},
                             {"21"},
