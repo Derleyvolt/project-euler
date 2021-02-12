@@ -7,7 +7,8 @@ ls[1] = 1;
 
 cnt = 2
 
-## Existe uma abordagem matemática pra resolver esse problema de maneira mais elegante e com complexidade infinitamente melhor. Dps vejo ela.
+## Existe uma abordagem matemática pra resolver esse problema de maneira mais elegante e com complexidade infinitamente melhor. Dps vejo ela. 
+## https://projecteuler.net/best_posts=025
 
 ## brute force, eca..
 while True:
