@@ -7,6 +7,8 @@ ls[1] = 1;
 
 cnt = 2
 
+## Existe uma abordagem matemática pra resolver esse problema de maneira mais elegante e com complexidade infinitamente melhor.. dps vejo ela.
+
 while True:
     ls[cnt] = ls[cnt-1] + ls[cnt-2]
     if len(str(ls[cnt])) >= 1000:
