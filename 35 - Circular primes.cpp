@@ -2,10 +2,6 @@
 
 using namespace std;
 
-#define ll  long long
-#define vi  vector<int>
-#define ii  array<int,2>
-
 bool is_prime(int n) {
      if(n < 2)
           return false;
@@ -16,6 +12,7 @@ bool is_prime(int n) {
      return true;
 }
 
+// usando arimética modular
 bool rotate(int n) {
      string aux = to_string(n);
      string s(aux);
@@ -28,11 +25,24 @@ bool rotate(int n) {
      return true;
 }
 
+// usando string insert
+bool rotate_ex(int n) {
+     string aux = to_string(n);
+     for(int i = 1; i < aux.size(); i++) {
+          aux.insert(0, 1, aux.back()), aux.pop_back();
+          if(not is_prime(stoi(aux.c_str())))
+               return false;
+     }
+     return true;
+}
+
 int main() {
      int ans = 0;
      for(int i = 0; i <= 1e6; i++) {
-          if(is_prime(i) and rotate(i))
-              ans++;
+          if(is_prime(i)) {
+               if(rotate_ex(i))
+                    ans++;
+          }
      }
      cout << ans << endl;
      return 0;
