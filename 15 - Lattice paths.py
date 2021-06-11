@@ -1,4 +1,4 @@
-// sdds bigint lib
+// (40 escolhe 20)
 
 def fact(n):
     if n <= 1:
