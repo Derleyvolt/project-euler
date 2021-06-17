@@ -8,7 +8,7 @@ using namespace std;
 map<map<ll, ll>, vector<ll>> mp;
 
 void generate() {
-    for(ll i = 1; i < int(10000); i++) {
+    for(ll i = 1; i < 10000; i++) {
         map<ll, ll> mpt;
         string digit = to_string(i*i*i);
         for(auto& s : digit) {
